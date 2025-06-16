@@ -1,8 +1,148 @@
-<h1>Bridge Stock</h1>
-<h2>Find ranked accounts, star accounts, guilds, and more</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BridgeShop</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      color: white;
+      font-family: 'DM Sans', sans-serif;
+      background-color: black;
+    }
 
-<p></p>
+    .content, .lvlshop, .rankshop, .guildshop {
+      margin-left: 10px;
+      display: none;
+    }
 
-<style>
-  
-</style>
+    .accs {
+      border-radius: 15px;
+      margin-inline: 250px;
+      color: white;
+      margin: 10px;
+    }
+
+    .accs img {
+      margin-inline: 18px;
+      margin-top: 10px;
+      width: 100px;
+    }
+
+    .accs, .Stars, .Ranked, .Guild {
+      margin-left: 0px;
+      margin-top: 5px;
+    }
+
+    .Stars, .Ranked, .Guild {
+      font-size: 50px;
+      background-color: #0f0f0f;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      gap: 15px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .Stars:hover, .Ranked:hover, .Guild:hover {
+      background-color: grey;
+    }
+
+    button {
+      background-color: #0f0f0f;
+      font-size: 20px;
+      color: white;
+      border-radius: 10px;
+      border-style: solid;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="home" class="content">
+    <h1>BridgeShop (site beta lol)</h1>
+    <h2>Find accounts with ranks, levels, and guilds for a cheap price</h2>
+
+    <div class="accs">
+      <div onclick="showPage('level')" class="Stars">
+        <img src="https://raw.githubusercontent.com/bridgeshop/bridgeshop.github.io/refs/heads/main/star.png" />
+        <a>Level account | 10-2000 RB</a>
+      </div>
+
+      <div onclick="showPage('ranked')" class="Ranked">
+        <img src="https://raw.githubusercontent.com/bridgeshop/bridgeshop.github.io/refs/heads/main/star.png" />
+        <a>Ranked Account | 0-2000 RB</a>
+      </div>
+
+      <div onclick="showPage('guild')" class="Guild">
+        <img src="https://raw.githubusercontent.com/bridgeshop/bridgeshop.github.io/refs/heads/main/star.png" />
+        <a>Guild Accounts | 20-1000 RB</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="level" class="lvlshop">
+    <button onclick="showPage('home')">Back</button>
+    <h1>Level accounts (DM ME FOR OFFER)</h1>
+    <button>10 Stars - 5 Robux</button>
+    <button>20 Stars - 10 Robux</button>
+    <button>30 Stars - 45 Robux</button>
+    <button>40 Stars - 70 Robux</button>
+    <button>50 Stars - 90 Robux</button>
+    <button>60 Stars - 120 Robux</button>
+    <button>70 Stars - 170 Robux</button>
+    <button>80 Stars - 290 Robux</button>
+    <button>90 Stars - 350 Robux</button>
+    <button>100 Stars - 500 Robux</button>
+    <button>110 Stars - 550 Robux</button>
+  </div>
+
+  <div id="ranked" class="rankshop">
+    <button onclick="showPage('home')">Back</button>
+    <h1>Ranked accounts (DM ME FOR OFFER)</h1>
+    <button>Silver - 5 Robux</button>
+    <button>Silver I - 10 Robux</button>
+    <button>Silver II - 30 Robux</button>
+    <button>Silver III - 50 Robux</button>
+    <button>Gold - 70 Robux</button>
+    <button>Gold I - 90 Robux</button>
+    <button>Gold II - 120 Robux</button>
+    <button>Gold III - 150 Robux</button>
+    <button>Diamond - 200 Robux</button>
+    <button>Diamond I - 250 Robux</button>
+    <button>Diamond II - 300 Robux</button>
+    <button>Diamond III - 320 Robux</button>
+    <button>Emerald - 400 Robux</button>
+    <button>Emerald I - 600 Robux</button>
+    <button>Emerald II - 800 Robux</button>
+    <button>Emerald III - 1000 Robux</button>
+    <button>Amethyst - 2000 Robux</button>
+  </div>
+
+  <div id="guild" class="guildshop">
+    <button onclick="showPage('home')">Back</button>
+    <h1>Guild accounts (DM ME FOR OFFER)</h1>
+    <button>LMK - 100 Robux</button>
+    <button>BWO - 110 Robux</button>
+    <button>BDBR - 10 Robux</button>
+    <button>EPQ - 20 Robux</button>
+  </div>
+
+  <script>
+    function showPage(page) {
+      const pages = ['home', 'level', 'ranked', 'guild'];
+      pages.forEach(p => {
+        document.getElementById(p).style.display = p === page ? 'block' : 'none';
+      });
+    }
+
+    // Show home by default
+    showPage('home');
+  </script>
+
+</body>
+</html>
