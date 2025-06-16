@@ -27,18 +27,16 @@
       box-sizing: border-box;
     }
     .content, .lvlshop, .rankshop, .guildshop {
-      margin-left: 10px;
       display: none;
       color: #c74c4c;
       font-family: 'DM Sans', sans-serif;
       background-color: black;
       padding: 1.5rem 2rem;
-      max-width: 900px;
-      margin-inline: auto;
       margin-top: 1rem;
-      border: 1px solid #c74c4c;
       border-radius: 0.75rem;
       box-shadow: 0 0 10px #c74c4c55;
+      width: 100%;
+      box-sizing: border-box;
     }
     .accs {
       margin-inline: 0;
@@ -48,6 +46,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 1.5rem;
+      width: 100%;
     }
     .accs img {
       display: none;
@@ -75,7 +74,6 @@
       text-align: center;
       box-shadow: none;
       letter-spacing: 0.03em;
-      box-shadow: 0 0 6px #c74c4c88;
       user-select: none;
       -webkit-tap-highlight-color: transparent;
     }
@@ -108,7 +106,6 @@
     }
     button:hover {
       background-color: #a03a3a;
-      box-shadow: 0 0 10px #c74c4ccc;
     }
     a {
       color: #c74c4c;
@@ -159,14 +156,14 @@
         <i class="fab fa-discord"></i> Discord
       </a>
     </header>
-    <main class="flex flex-col items-center justify-center flex-grow px-6 text-center text-[#c74c4c]">
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight max-w-xl">
+    <main class="flex flex-col justify-center flex-grow px-6 text-[#c74c4c] w-full">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight w-full">
         BridgeStock.
       </h1>
-      <p class="mt-4 text-[#c74c4ccc] text-base md:text-lg mb-10 max-w-lg">
+      <p class="mt-4 text-[#c74c4ccc] text-base md:text-lg mb-10 w-full">
         Cheap alts and cheats.
       </p>
-      <div class="accs max-w-4xl w-full">
+      <div class="accs w-full">
         <div onclick="showPage('level')" class="Stars" role="button" tabindex="0">
           <span>Level account | 10-2000 RB</span>
         </div>
