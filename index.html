@@ -85,6 +85,14 @@
     </div>
   </div>
 
+      <div onclick="showPage('extras')" class="Extras">
+        <img src="https://raw.githubusercontent.com/bridgeshop/bridgeshop.github.io/refs/heads/main/star.png" />
+        <a>Extra game accounts</a>
+      </div>
+    </div>
+  </div>
+
+
   <div id="level" class="lvlshop">
     <button onclick="showPage('home')">Back</button>
     <h1>Level accounts (DM ME FOR OFFER @biytzyt discord)</h1>
@@ -132,9 +140,27 @@
     <button>EPQ - 20 Robux</button>
   </div>
 
+  <div id="extras" class="extras">
+    <h1>grow a garden</h1>
+    <button>1B Sheckle account - 200 Robux</button>
+    <button>5B Sheckle account - 1000 Robux</button>
+    <button>10B Sheckle account - 5000 Robux</button>
+    <h1>Blind Bandits (best stock)</h1>
+    <button>$100K account - 100 Robux</button>
+    <button>$300k account - 300 Robux</button>
+    <button>$1M acount - 500 Robux</button>
+    <button>$500K account (custom username) - 550 Robux</button>
+    <h1>Rivals</h1>
+    <button>10 star account - 5 robux</button>
+    <button>20 star account - 15 robux</button>
+    <button>30 star account - 30 robux</button>
+    <button>70 star account - 80 robux</button>
+    <button>100 star account - 250 robux</button>
+  </div>
+
   <script>
     function showPage(page) {
-      const pages = ['home', 'level', 'ranked', 'guild'];
+      const pages = ['home', 'level', 'ranked', 'guild', 'extras'];
       pages.forEach(p => {
         document.getElementById(p).style.display = p === page ? 'block' : 'none';
       });
